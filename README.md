@@ -3,6 +3,11 @@
 This is a novel I have been trying to write for roughly 15 years.
 It is about a wizened old author, Ahab, and his apprentice Sophia.
 
+## Notes
+
+1. Create a "noteblock" LaTeX object that will read in a paragraph, then annotate the paragraph with Tikz and point to a footnote. Something like \begin{noteblock} paragraph \end{noteblock}{footnotetext}
+2. Create a `bind` command that reads in a string of 10 numbers and outputs a pre-configured book
+
 ## License
 Any code to render the text is licensed under the MIT license in LICENSE.md.
 

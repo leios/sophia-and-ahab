@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.fls
+*.toc
+*.tic
+*.scons*
+*.pdf
