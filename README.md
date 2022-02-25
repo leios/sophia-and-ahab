@@ -19,6 +19,7 @@ All corresponding chapters can be found in the SConscript file for the build.
 
 1. Create a "noteblock" LaTeX object that will read in a paragraph, then annotate the paragraph with Tikz and point to a footnote. Something like \begin{noteblock} paragraph \end{noteblock}{footnotetext}
 2. Allow for building with Fae.jl for fractal cover art?
+3. subfiles package for multi-file input to compile one at a time
 
 ## License
 Any code to render the text is licensed under the MIT license in LICENSE.md.

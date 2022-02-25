@@ -67,15 +67,3 @@ main_pdf_output = env.PDF(target='check.pdf', source=main_file)
 
 env.Precious(main_pdf_output)
 env.Default(main_pdf_output)
-'''
-
-
-# When runninng the report.html builder, make sure that the --ignore-error option is selected
-# textidote dumps its output to the stdout, and the number of errors and warning to
-# stderr. Because of this, SCons will report the number of errors reported by textidote
-# as its error number and crash. The only way to prevent this is to ignore
-# errors.
-env.Command(target='report.html', source=tex_source, action='textidote $SOURCE > $TARGET')
-env.Depends('report.html', '.textidote')
-env.Depends('report.html', 'ignore_file.txt')
-'''

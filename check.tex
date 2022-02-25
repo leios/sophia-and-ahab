@@ -1,10 +1,24 @@
 \input{content/aux/header.tex}
+
+\usepackage{lipsum}  
+
+\newenvironment{noteblock}[1]{
+    \begin{tikzpicture}
+        \draw (0,0.9) -- (3.0,0.9);
+        \node[draw] at (\linewidth,0cm) {\footnote{#1}};
+    \end{tikzpicture}
+
+}
     
 \input{content/aux/configuration.tex}
 
 \begin{document}
 
-\maketitle
+%\maketitle
+
+\begin{noteblock}{yo}
+\lipsum[1]
+\end{noteblock}
 
 \input{\COne} \footnote{blah}
 
