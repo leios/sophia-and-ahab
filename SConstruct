@@ -17,8 +17,8 @@ c_str=GetOption('config')
 
 # Generating dictionaries for configuration.tex
 # One dictionary per module
-dicts = [{ "0":"input1.tex",
-           "1":"input2.tex" }]
+dicts = [{ "0":"content/temp/input1.tex",
+           "1":"content/temp/input2.tex" }]
 
 # Generating all latex command strings
 name_array = ["COne",
@@ -48,7 +48,7 @@ for l in c_str:
                    "}}\n".format())
     count += 1
 
-f = open("configuration.tex","w")
+f = open("content/aux/configuration.tex","w")
 f.write(config_str)
 f.close()
 
