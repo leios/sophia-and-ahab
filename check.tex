@@ -1,18 +1,22 @@
 \input{content/aux/header.tex}
 
-\usepackage{lipsum}  
+\usepackage{lipsum}
+
 
 \newenvironment{noteblock}[1]{
+    \addtocounter{footnote}{1}
+    \footnotetext[\value{footnote}]{#1}
     \begin{tikzpicture}
-        \draw (0,0.9) -- (3.0,0.9);
-        \node[draw] at (\linewidth,0cm) {\footnote{#1}};
+        \draw (0,0) -- (\linewidth-1.5em,0);
+        \node[draw] at (\linewidth,-5cm) {\arabic{footnote}};
     \end{tikzpicture}
-
-}
     
+}
+
 \input{content/aux/configuration.tex}
 
 \begin{document}
+
 
 %\maketitle
 
