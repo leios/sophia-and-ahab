@@ -1,34 +1,46 @@
+
 \input{content/aux/header.tex}
+\input{content/aux/configuration.tex}
 
 \usepackage{lipsum}
-
-
-\newenvironment{noteblock}[1]{
-    \addtocounter{footnote}{1}
-    \footnotetext[\value{footnote}]{#1}
-    \begin{tikzpicture}
-        \draw (0,0) -- (\linewidth-1.5em,0);
-        \node[draw] at (\linewidth,-5cm) {\arabic{footnote}};
-    \end{tikzpicture}
-    
-}
-
-\input{content/aux/configuration.tex}
 
 \begin{document}
 
 
 %\maketitle
 
+
+\input{\COne} \footnote{blah}
+
 \begin{noteblock}{yo}
 \lipsum[1]
 \end{noteblock}
 
-\input{\COne} \footnote{blah}
+\begin{noteblock}{blah blah}
+help
+\end{noteblock}
+
+\noindent jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
+
+jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
+
+\noindent \begin{minipage}{\textwidth}
+jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
+\end{minipage}
 
 \newpage
 
 blah \footnote{blah}
+
+\begin{noteblock}{check}
+check
+\end{noteblock}
+
+\lipsum[2]
+
+\begin{noteblock}{yo}
+\lipsum[1]
+\end{noteblock}
 
 \end{document}
 

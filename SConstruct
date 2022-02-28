@@ -53,7 +53,7 @@ f.write(config_str)
 f.close()
 
 env = Environment(ENV=os.environ)
-env['PDFLATEX'] = 'xelatex'
+env['PDFLATEX'] = 'pdflatex'
 env.AppendUnique(PDFLATEXFLAGS='-synctex=0')
 env.AppendUnique(PDFLATEXFLAGS='-halt-on-error')
 env.AppendUnique(PDFLATEXFLAGS='-shell-escape')
