@@ -58,12 +58,12 @@ env.AppendUnique(PDFLATEXFLAGS='-synctex=0')
 env.AppendUnique(PDFLATEXFLAGS='-halt-on-error')
 env.AppendUnique(PDFLATEXFLAGS='-shell-escape')
 
-main_file = env.File('check.tex')
+main_file = env.File('main.tex')
 
 # Ensure all the subdocuments are in a correct dependency graph.
 SCons.Scanner.LaTeX.PDFLaTeXScanner().scan_recurse(main_file)
 
-main_pdf_output = env.PDF(target='check.pdf', source=main_file)
+main_pdf_output = env.PDF(target='main.pdf', source=main_file)
 
 env.Precious(main_pdf_output)
 env.Default(main_pdf_output)

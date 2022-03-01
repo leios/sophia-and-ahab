@@ -1,5 +1,6 @@
 *.aux
 *.log
+*.zip
 *.fls
 *.toc
 *.tic
