@@ -6,40 +6,19 @@
 
 \begin{document}
 
+\maketitle
 
-%\maketitle
-
-\input{\COne} \footnote{blah}
-
-\begin{noteblock}{yo}
-\lipsum[1]
-\end{noteblock}
-
-\begin{noteblock}{blah blah}
-help
-\end{noteblock}
-
-\noindent jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
-
-jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
-
-\noindent \begin{minipage}{\textwidth}
-jfienafjd saf djsa fiud sajf disaj ids aic dsai cdsa c dsac dsau vcdusa cud savc dsa cdius ac dsai ciuds aciuds acui dsiuc dsiua ciudsa ciud saiuc dsiua cdiusa ciuds ciu dsaiuc dsaiu cdiusao ciudsa ciudsa
-\end{minipage}
+\input{content/chapters/intro.tex}
 
 \newpage
 
-blah \footnote{blah}
+\chapter{Meddlings}
 
-\begin{noteblock}{check}
-check
-\end{noteblock}
-
-\lipsum[2]
+% All chapters will be built with Scons in the configuration.tex file, names are: COne, CTwo, CThree...
+\input{\COne}
 
 \begin{noteblock}{yo}
-\lipsum[1]
+Arbitrary paragraph to use as an example to show how to use the noteblock type
 \end{noteblock}
 
 \end{document}
-
