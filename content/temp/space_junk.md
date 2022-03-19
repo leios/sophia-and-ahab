@@ -92,4 +92,4 @@ That was an opportunity I couldn't pass up and is how I found myself navigating 
 It was perfect.
 Just like old times.
 
-Whenever I passed our old village, I would wave to my father, hoping that he knew that one of the many stars was his son.
+Whenever I passed our old village, I would wave to my father from my ship, hoping that he knew that one of the many stars was his son.

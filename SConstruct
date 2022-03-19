@@ -7,7 +7,7 @@ AddOption(
     '--chapters',
     dest='config',
     type='string',
-    default='0',
+    default='00000000000',
     action='store',
     metavar='DIR',
     help='installation prefix',
@@ -18,7 +18,17 @@ c_str=GetOption('config')
 # Generating dictionaries for configuration.tex
 # One dictionary per module
 dicts = [{ "0":"content/temp/input1.tex",
-           "1":"content/temp/input2.tex" }]
+           "1":"content/temp/input2.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/chapters/07_sophia_independence/00_space_junk.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },
+         { "0":"content/temp/none.tex" },]
 
 # Generating all latex command strings
 name_array = ["COne",
